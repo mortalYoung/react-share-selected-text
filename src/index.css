@@ -1,0 +1,58 @@
+.shared-warpped {
+  position: relative;
+}
+.shared-container {
+  position: absolute;
+  transform: translate(-50%, -150%);
+  z-index: 99;
+  background-color: #404658;
+  box-shadow: 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  transition: opacity 0.5s, transform 0.5s;
+  opacity: 1;
+}
+.shared-container.visible {
+  opacity: 0;
+  transform: translate(-50%, -130%);
+  pointer-events: none;
+}
+
+.shared-container::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -4px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: #404658;
+  border-bottom: 0;
+}
+
+.shared-buttons {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 30px;
+  place-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.shared-button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+}
+.shared-button > span[title] {
+  display: inline-flex;
+}
+.shared-button:hover {
+  background: #4f566d;
+}
+.empty-data {
+  font-size: 12px;
+  pointer-events: none;
+}

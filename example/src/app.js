@@ -1,0 +1,93 @@
+import React from 'react'
+import { render } from 'react-dom'
+import SharedSelectText from 'react-share-selected-text';
+import 'react-share-selected-text/lib/index.min.css';
+// import SharedSelectText from '../../src' // 引入组件
+
+const App = () => (
+    <div>
+        <SharedSelectText
+            buttonsClassName="tsss"
+            buttonsRender={
+                <div>你奈我何</div>
+            }
+        >
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+            testtesttesttesttesttesttesttesttesttesttesttest
+        </SharedSelectText>
+        testtesttesttesttesttesttesttesttesttesttesttest
+        testtesttesttesttesttesttesttesttesttesttesttest
+        testtesttesttesttesttesttesttesttesttesttesttest
+        testtesttesttesttesttesttesttesttesttesttesttest
+        testtesttesttesttesttesttesttesttesttesttesttest
+    </div>
+)
+render(<App />, document.getElementById('root'))

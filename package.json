@@ -1,6 +1,6 @@
 {
   "name": "react-share-selected-text",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "a react share selected text component",
   "main": "lib/index.js",
   "scripts": {
@@ -9,11 +9,21 @@
   },
   "author": "mortalYoung",
   "license": "ISC",
-  "keywords":[
+  "keywords": [
     "react",
-    "react component",
-    "share selected text"
+    "react-component",
+    "share",
+    "selected",
+    "text"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mortalYoung/react-share-selected-text.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mortalYoung/react-share-selected-text/issues"
+  },
+  "homepage": "https://github.com/mortalYoung/react-share-selected-text",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",

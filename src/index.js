@@ -7,8 +7,8 @@ const innerButtons = {
 	weibo: <Weibo />,
 	facebook: <Facebook />,
 	wechat: <Wechat />,
-	twitter: <Twitter />
-}
+	twitter: <Twitter />,
+};
 
 const SharedSelectText = ({
 	children,
@@ -16,7 +16,7 @@ const SharedSelectText = ({
 	buttons,
 	buttonsRender,
 	gridWidth = 30,
-	buttonsClassName
+	buttonsClassName,
 }) => {
 	const slotRef = useRef();
 	const [visible, setVisible] = useState(false);
@@ -24,12 +24,12 @@ const SharedSelectText = ({
 	const updatePosition = (rect) => {
 		const refRect = slotRef.current.getBoundingClientRect();
 		const top = rect.top - refRect.top;
-		const left = (rect.left + rect.width / 2 - refRect.left);
-		setPosition({ top, left })
+		const left = rect.left + rect.width / 2 - refRect.left;
+		setPosition({ top, left });
 		window.setTimeout(() => {
 			setVisible(true);
 		}, timeout);
-	}
+	};
 	const updateShared = () => {
 		const selected = getSelectedText();
 		if (
@@ -42,47 +42,59 @@ const SharedSelectText = ({
 		} else {
 			setVisible(false);
 		}
-	}
+	};
 	const renderButtons = () => {
 		if (Array.isArray(buttons) && buttons.length) {
 			return buttons.map((item, index) => {
 				if (typeof item.icon === 'string') {
-					return <div className={styles['shared-button']} onClick={item.onClick} key={item.icon}>
-						{innerButtons[item.icon]}
-					</div>
+					return (
+						<div
+							className={styles['shared-button']}
+							onClick={item.onClick}
+							key={item.icon}
+						>
+							{innerButtons[item.icon]}
+						</div>
+					);
 				} else {
-					return <div className={styles['shared-button']} onClick={item.onClick} key={index}>
-						{item.icon}
-					</div>
+					return (
+						<div
+							className={styles['shared-button']}
+							onClick={item.onClick}
+							key={index}
+						>
+							{item.icon}
+						</div>
+					);
 				}
-			})
+			});
 		} else if (buttonsRender) {
-			return <>{buttonsRender}</>
+			return <>{buttonsRender}</>;
 		}
 		return <div className={styles['empty-data']}>No Data</div>;
-	}
+	};
 	const buttonsStyle = () => {
 		if (Array.isArray(buttons) && buttons.length) {
 			return {
-				gridTemplateColumns: `repeat(${buttons.length},${gridWidth}px)`
-			}
+				gridTemplateColumns: `repeat(${buttons.length},${gridWidth}px)`,
+			};
 		} else {
-			return {}
+			return {};
 		}
-	}
+	};
 	useEffect(() => {
-		document.body.addEventListener('mouseup', updateShared)
-		return () => document.body.removeEventListener('mouseup', updateShared)
-	}, [slotRef.current])
+		document.body.addEventListener('mouseup', updateShared);
+		return () => document.body.removeEventListener('mouseup', updateShared);
+	}, [slotRef.current]);
 	return (
 		<article ref={slotRef} className={styles['shared-warpped']}>
 			<div
 				className={classnames(
 					styles['shared-container'],
-					!visible && styles.visible
+					!visible && styles.visible,
 				)}
 				style={{
-					...position
+					...position,
 				}}
 			>
 				<div
@@ -93,7 +105,7 @@ const SharedSelectText = ({
 				</div>
 			</div>
 			{children}
-		</article >
-	)
-}
+		</article>
+	);
+};
 export default SharedSelectText;

@@ -4,3 +4,6 @@ config
 example
 src
 .babelrc
+*.log
+.eslintrc
+.prettierrc

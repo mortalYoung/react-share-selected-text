@@ -5,5 +5,5 @@ example
 src
 .babelrc
 *.log
-.eslintrc
-.prettierrc
+.eslintrc.js
+.prettierrc.js

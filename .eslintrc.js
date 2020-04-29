@@ -21,6 +21,11 @@ module.exports = {
     "plugins": [
         "react"
     ],
+    "settings": {
+        "react": {
+            "version": "lastest"
+        }
+    },
     "rules": {
     }
 };

@@ -1,0 +1,57 @@
+.App-header {
+	min-height: 50vh;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	background-color: #159957;
+	background-image: linear-gradient(120deg, #155799, #159957);
+}
+
+.App-head-description {
+	font-weight: normal;
+	opacity: 0.7;
+}
+
+.App-link {
+	color: #61dafb;
+}
+.btn {
+	display: inline-block;
+	margin-bottom: 1rem;
+	color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.08);
+	border-color: rgba(255, 255, 255, 0.2);
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 0.3rem;
+	transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+	text-decoration: none;
+	padding: 0.75rem 1rem;
+}
+.btn:hover {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-color: rgba(255, 255, 255, 0.3);
+}
+
+.App-body {
+	max-width: 960px;
+	margin: 0 auto;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.App-body-usage {
+	color: #159957;
+}
+.App-body-title {
+	color: #404040;
+	font-size: 28px;
+}
+.App-body-subtitle {
+	text-align: center;
+	color: #404040;
+	font-size: 14px;
+}

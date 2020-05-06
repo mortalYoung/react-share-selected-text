@@ -17,7 +17,7 @@ function App() {
       <header className="App-header">
         <h1 className="App-head-project-name">{projects.name}</h1>
         <h3 className="App-head-description">{projects.description}</h3>
-        <a className="App-link btn" href={projects.homepage}>View on Github</a>
+        <a className="App-link btn" href={projects.repository}>View on Github</a>
       </header>
       <main className="App-body">
         <h2 className="App-body-usage">Usage: Here is an article that warpped by SharedSelectText</h2>

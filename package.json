@@ -1,6 +1,6 @@
 {
   "name": "react-share-selected-text",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "a react share selected text component",
   "main": "lib/index.tsx",
   "scripts": {

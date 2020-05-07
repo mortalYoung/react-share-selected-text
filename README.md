@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A component that can share selected text.
+- A component that can share selected text.
 
 ## Install
 
@@ -13,6 +13,8 @@ npm install react-share-selected-text
 ```Base
 yarn add react-share-selected-text
 ```
+## Demo
+[在线Demo](https://mortalyoung.github.io/react-share-selected-text/)
 
 ## Usage
 
@@ -26,17 +28,20 @@ const App = () => (
   </SharedSelectText>
 );
 ```
+---
+`ShareSelectedProps`:属性如下
 | 属性 | 说明 | 类型 | 默认值 |
 | :---- | :---- | :---- | :---- |
-| timeout | 浮动框出现的延迟时间 | number | 300 |
-| buttons | 设置浮动框上面的按钮 | IButtons[] |  |
-| buttonsRender | 浮动框自定义渲染，优先级低于 buttons | JSX.Element | |
-| gridWidth | 按钮格子的大小 | number | 30 |
-| buttonsClassName | 按钮区域自定义 class | string | |
+| timeout | 浮动框出现的延迟时间 | `number` | 300 |
+| buttons | 设置浮动框上面的按钮 | `IButtons[]` |  |
+| buttonsRender | 浮动框自定义渲染，优先级低于 buttons | `JSX.Element` | |
+| gridSize | 按钮格子的大小 | `number` | 30 |
+| buttonsClassName | 按钮区域自定义 class | `string` | |
+| onShow | 当组件可见时的钩子函数 | `Function` | |
+| onHide | 当组件不可见时的钩子函数 | `Function`||
 
-
-
-IButtons 属性如下：
+---
+`ButtonProps` 属性如下：
 | 属性 | 说明 | 类型 | 默认值 |
 | :---- | :---- | :---- | :---- |
 | icon | 展示图标,内置有` wechat,twitter,facebook,weibo ` | string | JSX.Element |  |

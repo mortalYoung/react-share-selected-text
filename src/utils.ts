@@ -1,4 +1,4 @@
-interface SelectionProps {
+export interface SelectionProps {
 	selection: Selection;
 	text: string;
 }

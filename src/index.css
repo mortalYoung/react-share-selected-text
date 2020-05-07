@@ -7,7 +7,7 @@
   z-index: 99;
   background-color: #404658;
   box-shadow: 0 9px 28px 8px rgba(0, 0, 0, 0.05);
-  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, top .3s, left .3s;
   opacity: 1;
 }
 .shared-container.visible {
@@ -32,7 +32,6 @@
 .shared-buttons {
   width: 100%;
   display: grid;
-  grid-template-rows: 30px;
   place-items: center;
   color: #fff;
   cursor: pointer;
@@ -53,6 +52,9 @@
   background: #4f566d;
 }
 .empty-data {
-  font-size: 12px;
   pointer-events: none;
+  padding: 0 10px;
+  font-family: sans-serif;
+  line-height: 1.5;
+  letter-spacing: 1;
 }

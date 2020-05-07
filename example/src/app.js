@@ -1,15 +1,17 @@
 import React from 'react'
 import { render } from 'react-dom'
-import SharedSelectText from '../../lib' // 引入组件
-import '../../lib/index.min.css';
+// import SharedSelectText from '../../lib' // 引入组件
+// import '../../lib/index.min.css';
+import SharedSelectText from '../../src'
 
 const App = () => (
     <div>
         <SharedSelectText
-            buttonsClassName="tsss"
-            buttonsRender={
-                <div>你奈我何</div>
-            }
+            buttons={[{ icon: 'wechat', onClick: () => console.log('test') }]}
+            buttonsClassName="tet"
+            gridSize={35}
+            onHide={() => console.log('hide')}
+            onShow={() => console.log('show')}
         >
             testtesttesttesttesttesttesttesttesttesttesttest
             testtesttesttesttesttesttesttesttesttesttesttest
@@ -83,10 +85,10 @@ const App = () => (
             testtesttesttesttesttesttesttesttesttesttesttest
         </SharedSelectText>
         testtesttesttesttesttesttesttesttesttesttesttest
-        testtesttesttesttesttesttesttesttesttesttesttest
-        testtesttesttesttesttesttesttesttesttesttesttest
-        testtesttesttesttesttesttesttesttesttesttesttest
-        testtesttesttesttesttesttesttesttesttesttesttest
-    </div>
+testtesttesttesttesttesttesttesttesttesttesttest
+testtesttesttesttesttesttesttesttesttesttesttest
+testtesttesttesttesttesttesttesttesttesttesttest
+testtesttesttesttesttesttesttesttesttesttesttest
+    </div >
 )
 render(<App />, document.getElementById('root'))

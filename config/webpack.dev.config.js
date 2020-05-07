@@ -22,6 +22,9 @@ const devConfig = {
 			},
 		]
 	},
+	resolve: {
+		extensions: ['.ts', '.tsx', '.js', '.jsx']
+	},
 	devServer: {
 		contentBase: path.join(__dirname, '../example/src/'),
 		compress: true,

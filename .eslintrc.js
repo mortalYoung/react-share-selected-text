@@ -1,31 +1,38 @@
 module.exports = {
+    "parser": '@typescript-eslint/parser',
     "env": {
         "browser": true,
         "es6": true
     },
     "extends": [
+        "plugin:@typescript-eslint/recommended",
         "plugin:react/recommended",
-        "standard"
     ],
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
-    },
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
         },
-        "ecmaVersion": 2018,
+        "ecmaVersion": 2019,
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "@typescript-eslint",
+        "prettier"
     ],
     "settings": {
         "react": {
             "version": "lastest"
         }
     },
+    "overrides": [
+        {
+            "files": ["**/*.tsx"],
+            "rules": {
+                "react/prop-types": "off"
+            }
+        }
+    ],
     "rules": {
+        "prettier/prettier": "error"
     }
 };

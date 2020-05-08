@@ -8,3 +8,4 @@ src
 .eslintrc.js
 .prettierrc.js
 tsconfig.json
+.travis.yml

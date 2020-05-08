@@ -24,7 +24,12 @@ function App() {
         <section>
           <h1 className="App-body-title">{content.title}</h1>
           <h3 className="App-body-subtitle">{content.subtitle}</h3>
-          <SharedSelectText buttons={buttons} buttonsClassName="App-body-content" timeout={150}>
+          <SharedSelectText
+            buttons={buttons}
+            buttonsClassName="App-body-content"
+            timeout={300}
+            gridSize={35}
+          >
             <div dangerouslySetInnerHTML={{ __html: content.content }}></div>
           </SharedSelectText>
         </section>

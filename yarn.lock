@@ -8686,10 +8686,10 @@ react-scripts@3.4.1:
   optionalDependencies:
     fsevents "2.1.2"
 
-react-share-selected-text@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.npmjs.org/react-share-selected-text/-/react-share-selected-text-1.0.4.tgz#ba7a3f9f8bfe9f1f7e90a128a4a36744bd4a4df6"
-  integrity sha512-BHgguO1E62Jn/+L8y5c74WkX2dODganGn0aFeDBwdE4AF09JNIxwefDS6YlDLi0cKPoccpIdryHPbYGq26gNjg==
+react-share-selected-text@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.npmjs.org/react-share-selected-text/-/react-share-selected-text-1.0.8.tgz#2abb711a7557f19d9acdd70fd2a61cefcc45b8a1"
+  integrity sha512-bBcAWf7Ge+An7XQuvAQyGxhaNQ8eb+Zau3Rhgy80wsDL74+A76C6y8w0F3R1WponSv8jQtJmgqEXSZH4dQbIFA==
 
 react@^16.13.1:
   version "16.13.1"

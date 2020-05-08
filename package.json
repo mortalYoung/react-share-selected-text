@@ -38,6 +38,6 @@
   },
   "devDependencies": {
     "gh-pages": "^2.2.0",
-    "react-share-selected-text": "^1.0.4"
+    "react-share-selected-text": "^1.0.8"
   }
 }

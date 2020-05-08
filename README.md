@@ -1,5 +1,5 @@
 # react-share-selected-text
-
+[![Build Status](https://www.travis-ci.org/mortalYoung/react-share-selected-text.svg?branch=master)](https://www.travis-ci.org/mortalYoung/react-share-selected-text)
 ## Introduction
 
 - A component that can share selected text.

@@ -1,8 +1,8 @@
 {
   "name": "react-share-selected-text",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "a react share selected text component",
-  "main": "lib/index.tsx",
+  "main": "lib/index.js",
   "scripts": {
     "start": "webpack-dev-server --config config/webpack.dev.config.js",
     "build": "webpack --config config/webpack.prod.config.js",

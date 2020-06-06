@@ -20,6 +20,7 @@
       transform: translate(-50%, -130%);
       pointer-events: none;
     }
+
     &::after {
       content: '';
       position: absolute;
@@ -51,13 +52,16 @@
         > span[title] {
           display: inline-flex;
         }
+
         &:hover {
           background: @active-color;
         }
+
         &:first-child {
           border-top-left-radius: @border-radius;
           border-bottom-left-radius: @border-radius;
         }
+
         &:last-child {
           border-top-right-radius: @border-radius;
           border-bottom-right-radius: @border-radius;

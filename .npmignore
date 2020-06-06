@@ -1,12 +1,15 @@
 # 指定发布 npm 的时候需要忽略的文件和文件夹
 # npm 默认不会把 node_modules 发上去
-config
-example
-src
-.babelrc
+docs
 *.log
 .eslintrc.js
-.prettierrc.js
+.prettierrc
 tsconfig.json
 .travis.yml
 .commitlintrc.js
+docs-dist
+.editorconfig
+.fatherrc.ts
+.prettierignore
+.umirc.ts
+src/**

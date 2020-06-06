@@ -1,0 +1,76 @@
+{
+  "name": "react-share-selected-text",
+  "version": "1.0.8",
+  "description": "a react share selected text component",
+  "scripts": {
+    "start": "dumi dev",
+    "docs:build": "dumi build",
+    "docs:deploy": "gh-pages -d docs-dist",
+    "build": "father-build",
+    "deploy": "npm run docs:build && npm run docs:deploy",
+    "release": "npm run build && npm publish",
+    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage",
+    "commit": "git-cz"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "react": "^16.12.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@types/classnames": "^2.2.10",
+    "@umijs/preset-react": "1.x",
+    "@umijs/test": "^3.0.5",
+    "classnames": "^2.2.6",
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "^3.2.0",
+    "dumi": "^1.0.8",
+    "father-build": "^1.17.2",
+    "gh-pages": "^3.0.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.0.7",
+    "prettier": "^1.19.1",
+    "yorkie": "^2.0.0"
+  },
+  "author": "mortalYoung",
+  "license": "ISC",
+  "keywords": [
+    "react",
+    "react-component",
+    "share",
+    "selected",
+    "text"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mortalYoung/react-share-selected-text.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mortalYoung/react-share-selected-text/issues"
+  },
+  "homepage": "https://github.com/mortalYoung/react-share-selected-text"
+}
